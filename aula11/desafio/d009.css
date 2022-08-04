@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    font: 14pt Arial;
+    background-color: lightgoldenrodyellow;    
+}
+h1 {
+    color: lightskyblue;
+}
+strong {
+    color: darkgreen;
+}
+
