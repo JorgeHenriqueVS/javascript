@@ -13,7 +13,10 @@
     <div id="res">
 
     </div>
-    <script> 
+    <script>
+        var input = document.querySelector("input");
+        input.focus();
+
         function calcular() {
             var txtv = window.document.querySelector('input#txtvel')
             var res = window.document.querySelector('div#res')
@@ -23,6 +26,9 @@
                 res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade!</p>`
             }
             res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+
+            input.value = "";
+            input.focus();
         }
     </script>
 </body>
