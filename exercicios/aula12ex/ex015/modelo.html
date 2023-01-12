@@ -5,15 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Modelo de Exercício</title>
+    <title>Verificador de Idade</title>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
         <div>
-            Testando...
+            <div>
+                Verificador de Idade:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </div>
+            <div>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Maculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </div>
+            <div>
+                <input type="button" value="Verificar" id="btn">
+            </div>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
         </div>
     </section>
     <footer>
