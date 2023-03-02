@@ -1,10 +1,11 @@
 var button = window.document.getElementById('btn');
+var inputAno = document.getElementById('txtano');
 button.addEventListener('click', verificar);
+inputAno.focus();
 
 function verificar() {
     var data = new Date()
-    var ano = data.getFullYear()
-    var inputAno = document.getElementById('txtano')
+    var ano = data.getFullYear()    
     var res = document.querySelector('div#res')
     if (inputAno.value.length == 0 || Number(inputAno.value) > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
@@ -47,4 +48,7 @@ function verificar() {
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
         res.appendChild(img)
     }
+
+    inputAno.value = '';
+    inputAno.focus();
 }
